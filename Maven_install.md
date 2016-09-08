@@ -54,10 +54,19 @@ mvn help:system
 ##### 注：案例setting.xml就在本目录中，可以下载参考
 
 
-### MAC OS平台下的安装
+#### 关于idea中加载Maven的archetype慢的解决方案
 
-暂略<br/>
+1.下载[archetype-catalog.xml文件](http://repo.maven.org/maven2/archetype-catalog.xml)，注：在本技术文档中也添加了已下载好的xml
 
+2.将上述文件放置到maven的默认路径下,一般在用户根目录下的一个隐藏目录，~/.m2
+
+3.配置Preferences->Maven->Runner->VM Options，添加:
+
+```
+-DarchetypeCatalog=local
+```
+
+4.重启IDEA
 
 ## 编写者
 
