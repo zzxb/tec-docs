@@ -1,0 +1,9 @@
+Host git.coding.net
+    HostName        git.coding.net
+    User            账号名
+    IdentityFile    /Users/zzxb/.ssh/id_rsa
+     
+Host github.com
+    HostName        github.com
+    User            账号名
+    IdentityFile    /Users/zzxb/.ssh/github

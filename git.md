@@ -28,7 +28,13 @@ git config --global user.email "email@example.com"
 
 ### MAC OS平台下的安装
 
-暂略<br/>
+1.下载[GIT](https://git-scm.com/download/mac)
+
+2.安装并测试
+
+```
+git --version
+```
 
 
 ## 编写者
@@ -144,7 +150,7 @@ Host github.com
     IdentityFile    /Users/zzxb/.ssh/github
 ```
 
-
+##### 参考案例在目录中,config配置文件
 
 ## 修改日志
 - 2016-9-2:
