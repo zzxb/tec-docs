@@ -31,7 +31,11 @@ sudo gem update --system
 2.安装CocoaPods
 
 ```
-$ sudo gem install -n /usr/local/bin  cocoapods
+$ curl -L get.rvm.io | bash -s stable 
+$ source ~/.bashrc  
+$ source ~/.bash_profile  
+$ rvm install 2.2.5
+$ sudo gem install cocoapods
 ```
 
 3.clone CocoaPods镜像索引
