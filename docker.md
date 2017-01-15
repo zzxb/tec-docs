@@ -198,6 +198,22 @@ docker pull NAME[:TAG]
 
 在aliyun仓库获得镜像：https://dev.aliyun.com
 
+DOCKER容器时区问题解决
+
+```
+[root@ab374724d6b0 ~]# rm -rf /etc/localtime 
+[root@ab374724d6b0 ~]# ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+```
+
+Dockerfile中，ADD和COPY都是拷贝本机文件到container制作image。
+
+那么ADD和COPY有什么区别呢？
+
+ADD比COPY多了2个功能：
+
+① ADD 的<src>可以为URL
+
+② ADD 到container的tar文件会被自动解压，并删除原tar文件。
 
 #### Maven是啥？
 
