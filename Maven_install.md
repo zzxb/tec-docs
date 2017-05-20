@@ -105,6 +105,13 @@ mvn help:system
 
 4.重启IDEA
 
+#### 关于无法找到.m2目录的解决方案
+
+```
+mkdir ~/.m2
+cp /Users/zzxb/maven3/conf/settings.xml ~/.m2
+```
+
 ## 编写者
 
 - zzxb
